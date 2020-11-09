@@ -1,5 +1,4 @@
 .footerBlock{
-    height: 100vh;
     background-color: rgba(109, 243, 210, 0.8);
 }
 
@@ -12,8 +11,8 @@
     background-color: #eeeef5;
 }
 .itemsConatiner{
-    width: 420px;
-    height: 60px;
+    width: 280px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     border: 1px solid;

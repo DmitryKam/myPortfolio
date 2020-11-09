@@ -1,11 +1,11 @@
 .workBlock{
-    height: 100vh;
     background-color: rgba(233, 192, 255, 0.8);
 }
 
 .workContainer{
     flex-direction: column;
     justify-content: flex-start;
+
 }
 
 
@@ -18,4 +18,5 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }

@@ -1,5 +1,4 @@
 .contactsBlock{
-    height: 100vh;
     background-color: rgba(240, 26, 255, 0.53);
 }
 
@@ -14,7 +13,7 @@
 }
 
 .formContainer{
-    width: 400px;
+    width: 280px;
     height: 200px;
     border: 1px solid;
     display: flex;
