@@ -9,13 +9,11 @@ function Contacts() {
         <div className={`${sContainer.container} ${s.contactsContainer}`}>
             <h2 className={s.title}>Contacts</h2>
             <form className={s.formContainer}>
-            <input className={s.contactsInput} />
-            <input className={s.contactsInput} />
-            <textarea className={s.contactsTextArea}>
-
-            </textarea>
+                <input type={'text'}/>
+                <input type={'text'}/>
+                <textarea />
             </form>
-            <button className={s.buttonContainer}>Send</button>
+            <button type={'submit'} className={s.buttonContainer}>Send</button>
         </div>
     </div>
 }
