@@ -1,0 +1,23 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+.remoteWork{
+    background-color: $bgColor;
+    .remoteWorkContainer{
+        flex-direction: column;
+        justify-content: space-between;
+        .title{
+            background-color: $bgColor;
+            @include text($titleFontFamilyPoppins,24px,1.2);
+        }
+        .hireMe{
+            width: 100px;
+            height: 50px;
+            background-color: $primaryColor;
+        }
+    }
+}
+
+
+
+
+

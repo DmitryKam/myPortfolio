@@ -1,0 +1,35 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.skill {
+  width: 250px;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    background-color: $primaryColor;
+  }
+  .titleSkill {
+    @include text($titleFontFamilyPoppins,18px,1.2);
+
+    letter-spacing: 1px;
+    margin: 0 0 5px;
+  }
+  .description {
+    width: 100%;
+    text-align: center;
+    @include text($textFontFamilyJosefinSans, 14px, 1.8);
+    font-weight: 400;
+  }
+}
+
+
+
+
+
+

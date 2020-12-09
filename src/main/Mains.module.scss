@@ -1,0 +1,20 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.mainBlock{
+    height: 100vh;
+    background-color: $bgColor;
+    .greeting{
+        width: 300px;
+        background-color: $bgSecondColor;
+    }
+    .photo{
+           width: 300px;
+           height: 400px;
+           background-color: $bgSecondColor;
+       }
+}
+
+
+
+

@@ -1,0 +1,29 @@
+@import "src/common/styles/sass/variables";
+.title {
+    margin: 0 0 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: $textColor;
+    line-height: 1.2;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        background: $primaryColor;
+        width: 55px;
+        height: 1px;
+        bottom: -30px;
+        margin-top: 30px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .title h2 {
+        margin: 0
+    }
+}
+
+

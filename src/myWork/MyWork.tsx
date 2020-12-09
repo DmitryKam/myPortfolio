@@ -1,8 +1,10 @@
 import React from 'react';
-import s from './MyWork.module.css';
+import s from './MyWork.module.scss';
 import sContainer from '../common/styles/Container.module.css';
 import Work from './work/Work';
 import Title from '../common/components/title/Title';
+import todoImmage from '../assets/immage/todolist.jpg'
+import socialNetwork from '../assets/immage/socialNetwork.png'
 
 
 
@@ -10,11 +12,15 @@ import Title from '../common/components/title/Title';
 
 function MyWork() {
 
-    const MyMork1 = {
+    const social = {
         color: 'blue',
-        //backgroundImage: 'url(' + imgUrl + ')',
+        backgroundImage: `url(${socialNetwork})`
     };
 
+    const todoList = {
+        color: 'blue',
+        backgroundImage:`url(${todoImmage})`
+    };
 
 
     return <div className={s.workBlock}>
@@ -22,16 +28,19 @@ function MyWork() {
             <Title title={"MY WORK!"}/>
             <div className={s.works}>
         <Work
-            name = {'Name project 1'}
+            style = {social}
+            name = {'Social network'}
             description={'Short description 1'}
         />
         <Work
-            name = {'Name project 2'}
+            style = {todoList}
+            name = {'todoList'}
             description={'Short description 2'}
         />
             </div>
     </div>
     </div>
+
 }
 
 export default MyWork;

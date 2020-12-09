@@ -1,17 +1,18 @@
 import React from 'react';
-import s from './Work.module.css';
+import s from './Work.module.scss';
 
 type WorkPropsType = {
     name: string
     description: string
+    style: any
 }
 
 
 function Work(props: WorkPropsType) {
 
-    return <div className={s.work}>
-        <div className={s.workPhoto}>
-            <button className={s.watchWork}>Watch</button>
+    return<div className={s.work}>
+        <div className={s.workImage} style={props.style}>
+            <button className={s.buttonWork}>Watch</button>
         </div>
         <div className={s.workInfo}>
             <h3 className={s.nameProject}> {props.name}</h3>

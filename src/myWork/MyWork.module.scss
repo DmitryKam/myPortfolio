@@ -1,0 +1,25 @@
+@import "src/common/styles/sass/variables";
+.workBlock {
+  background-color: $bgColor;
+  font: 400 12px/1.8 'Poppins', sans-serif;
+
+  .workContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .works {
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      align-items: flex-start;
+      @media screen and (max-width: 640px) {
+        justify-content: center;
+      }
+    }
+
+  }
+
+}
