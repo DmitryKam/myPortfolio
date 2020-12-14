@@ -1,18 +1,45 @@
 @import "src/common/styles/sass/variables";
 @import "src/common/styles/sass/mixins";
 
-.mainBlock{
-    height: 100vh;
+.mainBlock {
+  height: 100vh;
+  background-color: $bgColor;
+
+
+  .greeting {
+    width: 300px;
     background-color: $bgColor;
-    .greeting{
-        width: 300px;
-        background-color: $bgSecondColor;
+
+    .span {
+      @include text($textFontFamilyJosefinSans, 20px, 1.2);
     }
-    .photo{
-           width: 300px;
-           height: 400px;
-           background-color: $bgSecondColor;
-       }
+
+    .h1 {
+      @include text($textFontFamilyJosefinSans, 36px, 1.4);
+    }
+
+    .p {
+      @include text($textFontFamilyJosefinSans, 20px, 1.2);
+    }
+  }
+
+  .photo {
+    width: 400px;
+    height: 500px;
+    background-color: $bgSecondColor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 510px) {
+      width: 300px;
+      height: 400px;
+    }
+  }
+
+  @media screen and (max-width: 843px) {
+    justify-content: center;
+    height: auto;
+  }
 }
 
 

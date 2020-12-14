@@ -8,14 +8,16 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 20px 0;
 
   .icon {
-    width: 60px;
-    height: 60px;
-    background-color: $primaryColor;
+    width: 80px;
+    height: 80px;
+    color: $primaryColor ;
+    background-color: $bgSecondColor;
   }
   .titleSkill {
-    @include text($titleFontFamilyPoppins,18px,1.2);
+    @include text($titleFontFamilyPoppins,20px,1.2);
 
     letter-spacing: 1px;
     margin: 0 0 5px;

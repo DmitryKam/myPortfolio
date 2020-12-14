@@ -1,0 +1,41 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.footerBlock {
+  background-color: $bgColor;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .title {
+      background-color: $bgColor;
+      @include text($textFontFamilyJosefinSans, 24px, 1.4);
+    }
+
+    .itemsConatiner {
+      width: 350px;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid;
+      @media screen and (max-width: 481px) {
+        width: 280px;
+      }
+      @media screen and (max-width: 380px) {
+        width: 260px;
+        align-items: center;
+      }
+    }
+
+    .titleContainer {
+      background-color: $bgColor;
+      @include text($textFontFamilyJosefinSans, 18px, 1.4);
+    }
+  }
+}
+
+
+
+
+

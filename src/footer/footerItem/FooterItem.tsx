@@ -1,11 +1,24 @@
 import React from 'react';
-import s from './FooterItem.module.css';
+import s from './FooterItem.module.scss';
 
-function FooterItem() {
 
-    return <div className={s.footerItemContainer}>
+type FooterItemPropsType = {
+    icon?: string
+}
 
-    </div>
+
+
+
+function FooterItem(props:FooterItemPropsType) {
+
+    const styleBg = {
+        backgroundImage: `url(${props.icon})`
+    };
+
+
+    return <div className={s.footerItemContainer} style={styleBg}>
+
+        </div>
 }
 
 export default FooterItem;

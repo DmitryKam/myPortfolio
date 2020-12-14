@@ -1,0 +1,17 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+.nav {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+
+
+  .items{
+    text-decoration: none;
+    text-transform: uppercase;
+    @include text($textFontFamilyJosefinSans, 20px, 3);
+    &:hover { /* псевдо класс используется при наведении*/
+      color: $primaryColor;
+    }
+  }
+}
