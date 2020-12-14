@@ -4,7 +4,15 @@
   display: flex;
   width: 450px;
   justify-content: space-between;
-
+  @media screen and (max-width: 570px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 510px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 440px) {
+    width: 280px;
+  }
 
   .items{
     text-decoration: none;
@@ -12,6 +20,12 @@
     @include text($textFontFamilyJosefinSans, 20px, 3);
     &:hover { /* псевдо класс используется при наведении*/
       color: $primaryColor;
+    }
+   @media screen and (max-width: 570px) {
+      @include text($textFontFamilyJosefinSans, 16px, 2);
+    }
+    @media screen and (max-width: 440px) {
+      @include text($textFontFamilyJosefinSans, 14px, 2);
     }
   }
 }
